@@ -1,0 +1,71 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+canvas#game {
+    /* display: none; */
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    background-size: cover;
+}
+
+#bg_image_container {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background: url('../img/loading.gif') no-repeat center center / 16px 16px;
+    border: 1px solid red;
+}
+
+#bg_image_container img#bg_image {
+    height: auto;
+    opacity:0;
+    -moz-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+
+
+/* Background Picker */
+
+#background_picker {
+    max-width: 400px;
+    padding: 1em 2em;
+    margin: auto;
+    position: relative;
+    z-index: 20;
+    background: #FFF;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    border-radius: 0.5em;
+}
+
+#background_picker ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#background_picker li {
+    width: auto;
+}
+
+#background_picker li span {
+    cursor: pointer;
+}
+
+
